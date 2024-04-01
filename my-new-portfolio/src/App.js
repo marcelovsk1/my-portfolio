@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import Navbar from "./Components/Navbar/Navbar"
 import './App.css';
 import Intro from "./Components/Intro/Intro"
-// import About from "./Components/About/About"
+import About from "./Components/About/About"
 // import Experience from "./Components//Experience/Experience";
 // import Projects from "./Components/Projects/Projects";
 // import Contact from "./Components/Contact/Contact";
@@ -22,7 +22,7 @@ function App() {
       </Helmet>
       <Navbar/>
       <Intro />
-      {/* <About /> */}
+      <About />
       {/* <Experience /> */}
       {/* <Projects /> */}
       {/* <Contact /> */}
