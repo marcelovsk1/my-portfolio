@@ -1,0 +1,260 @@
+.project {
+  padding: 20px 0;
+  position: relative;
+  margin-top: 10vh;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 3%;
+}
+.project h2 {
+  font-size: 7vh;
+  font-weight: 600;
+  letter-spacing: -2px;
+  margin-bottom: 5vh;
+}
+
+.project h2 span {
+  color: var(--blueCard);
+  font-weight: 600;
+}
+
+.i-buttons-container .button.i-button:focus {
+  background-color: var(--gray);
+  color: var(--blueCard);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 5px;
+  margin: 2vh;
+}
+
+.box img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.box {
+  position: relative;
+  margin: 2vh;
+}
+
+.box::before {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+  position: absolute;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.box:hover::before {
+  opacity: 0.85;
+}
+
+.box {
+  position: relative;
+}
+
+.proj-txtx {
+  position: absolute;
+  text-align: center;
+  color: var(--blueCard);
+  top: 50%; /* Mantendo o texto no centro */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+
+.box:hover .proj-txtx {
+  opacity: 1;
+}
+
+.proj-txtx h4 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 1.1em;
+  margin-bottom: 16px;
+}
+
+.proj-txtx {
+  text-align: center;
+}
+
+.proj-txtx span {
+  font-weight: 500;
+  font-size: 1vh;
+  letter-spacing: 1px;
+  margin: 20px auto;
+  margin-left: 10px; /* Ajuste a margem esquerda conforme necessário */
+  margin-right: 10px; /* Ajuste a margem direita conforme necessário */
+}
+
+.box-rumble-img {
+  width: 200px;
+  height: auto;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+a.button.i-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+a.button.i-button:hover {
+  background-color: #0056b3;
+}
+
+.mobile-only {
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project {
+    max-width: 500px;
+    height: 600px;
+    width: 150%;
+    margin-top: 60px;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 24px;
+  }
+
+  .project h2 {
+    color: var(--color-text);
+    display: flex;
+    flex-direction: row;
+    font-size: 35px;
+    justify-content: center;
+  }
+
+  .nav-link.i-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #007AFF;
+    color: white;
+    font-size: 11.5px;
+    font-weight: 600;
+    text-align: center;
+    width: 5rem;
+    height: 2.5rem;
+    transition: background-color 0.3s ease, border 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 5px; /* Ajusta o espaçamento à esquerda para mover os botões para a direita */
+    margin-right: 5px; /* Ajusta o espaçamento à direita para reduzir o gap entre os botões */
+}
+
+  .wrapper {
+    display: flex; /* Alterando para flexbox para criar uma fila vertical */
+    flex-direction: column; /* Definindo a direção da fila como vertical */
+    margin: 20px;
+    margin-right: 45px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-width: 140%;
+    max-height: 400px; /* Definindo a altura máxima para a lista de eventos */
+  }
+
+  .box img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin-left: 14px;
+  }
+
+  .box {
+    position: relative;
+  }
+
+  .box::before {
+    display: none;
+
+  }
+
+  .special-button-mobile {
+    display: block;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: var(--black);
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    width: 80px;
+    height: 33px;
+    margin-left: 80px;
+    margin-top: -10px;
+    transition: background-color 0.3s ease, border 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    line-height: 2rem;
+  }
+
+  a.button.i-button {
+    display: none;
+  }
+
+  .proj-txtx h4 {
+    display: none;
+  }
+
+  .proj-txtx {
+    position: absolute;
+    text-align: center;
+    color: var(--blueCard);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    width: 60%;
+  }
+
+   .mobile-only {
+    display: block;
+  }
+
+  .proj-txtx span {
+    display: none;
+  }
+
+  .projects-title-mobile {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100%;
+    /* margin: 18 14; */
+    margin-left: 18px;
+    padding-bottom: 10px;
+  }
+
+}
