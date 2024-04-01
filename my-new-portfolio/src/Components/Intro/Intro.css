@@ -1,0 +1,262 @@
+.intro {
+  display: -webkit-box; /* Safari e iOS */
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  height: 750px;
+  margin: 0 auto;
+  max-width: 1200px;
+  -webkit-max-width: 1200px; /* Prefixo específico do Safari */
+}
+
+
+.role-container {
+  height: 50px;
+  margin-right: 30px;
+}
+
+.i-left {
+  display: -webkit-box; /* Safari e iOS */
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  position: relative;
+  -webkit-box-flex: 1; /* Safari e iOS */
+  -ms-flex: 1; /* IE 10 */
+  flex: 1;
+  -webkit-box-orient: vertical; /* Safari e iOS */
+  -webkit-box-direction: normal; /* Safari e iOS */
+  -ms-flex-direction: column; /* IE 10 */
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 250px;
+}
+
+.i-name {
+  display: -webkit-box; /* Safari e iOS */
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -webkit-box-orient: vertical; /* Safari e iOS */
+  -webkit-box-direction: normal; /* Safari e iOS */
+  -ms-flex-direction: column; /* IE 10 */
+  flex-direction: column;
+  text-align: center;
+}
+
+.i-name > :nth-child(1) {
+  color: rgb(101, 101, 101);
+  font-weight: regular;
+  font-size: 34px;
+}
+
+.i-name > :nth-child(2) {
+  color: var(--black);
+  font-weight: 600;
+  font-size: 54px;
+  letter-spacing: -1px;
+}
+
+.i-name > :nth-child(3) {
+  font-size: 34px;
+  margin-top: 5px;
+  background-image: -webkit-linear-gradient(left, #FF3B30, #FFCC00, #42b6ce, #007AFF, #9763e4); /* Safari */
+  background-image: linear-gradient(to right, #FF3B30, #FFCC00, #42b6ce, #007AFF, #9763e4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+  -webkit-text-fill-color: transparent;
+}
+
+.role {
+  font-weight: 600;
+}
+
+.i-buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button.i-button,
+.button-cv,
+.button-contact {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-cv {
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+}
+
+.button-cv:hover,
+.button-contact:hover {
+  transform: scale(1.10);
+}
+
+.button-contact {
+  background-color: #e3e3e3;
+  color: #007bff;
+  border: none;
+  padding: 14px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Prefixo específico do Safari */
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+}
+
+.i-icons {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  /* gap: 10px; */
+  margin-right: 15px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.i-icons > * {
+  width: 30px;
+  height: 30px;
+}
+
+.i-right {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: 500px;
+  margin-top: 130px;
+  padding-right: 50px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    margin-top: -80px;
+    margin-bottom: -20px;
+  }
+
+  .i-left {
+    order: 2;
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: -540px;
+    padding-bottom: 30px;
+  }
+
+  .i-right {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    height: 100%;
+    padding-bottom: 30px;
+    padding-left: 10px;
+  }
+
+  .i-name>:nth-child(1) {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .i-name>:nth-child(2) {
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .i-name>:nth-child(3) {
+    font-size: 26px;
+    width: 100%;
+  }
+
+  .role {
+    font-size: 26px;
+    font-weight: 600;
+    width: 100%;
+    height: 100px;
+    margin-top: -400px;
+  }
+
+  .i-buttons-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-cv {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 2px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .button-contact {
+    background-color: #efefef;
+    color: #007bff;
+    border: none;
+    padding: 2px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .i-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    margin-right: 20px;
+    margin-left: 11px;
+    /* gap: 5px;  */
+  }
+
+  .i-icons > * {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5px; /* Valor negativo para reduzir o espaçamento */
+  }
+
+
+
+  .i-name {
+    margin-top: -10vh;
+  }
+
+  .i-right img {
+    height: 150px;
+    padding-left: 50px;
+  }
+}
