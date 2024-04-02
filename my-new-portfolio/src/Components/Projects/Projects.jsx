@@ -67,7 +67,7 @@ const Projects = () => {
       title: "Scraper Bot",
       description: "An application that automates web data collection through scraping techniques",
       imgUrl: scraper,
-      link: "https://github.com/marcelovsk1/scraper-events"
+      link: "https://github.com/marcelovsk1/scraper-demo"
     },
     {
       title: "Game of Codes",

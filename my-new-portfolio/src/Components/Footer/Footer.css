@@ -1,10 +1,9 @@
 
 .footer-container {
-  margin-top: 6rem;  /* Removida a margem */
+  margin-top: 6rem;
   /* background-color: black; */
 
 }
-
 
 .n-lista {
   display: flex;
@@ -16,9 +15,8 @@
 }
 
 .n-lista li a {
-  /* Adicione seus estilos aqui */
-  color: var(--black); /* Cor do texto */
-  text-decoration: none; /* Remove a decoração de texto padrão */
+  color: var(--black);
+  text-decoration: none;
 }
 
 .n-lista>ul {
