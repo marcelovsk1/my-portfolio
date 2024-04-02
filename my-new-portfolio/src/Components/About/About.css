@@ -234,4 +234,16 @@ p {
     margin-left: 20vh;
   }
 
+  .iOS {
+    margin-right: 500px;
+    width: 250px;
+    height: auto;
+  }
+
+  .About-Pic {
+    width: 500px;
+    height: auto;
+    margin-left: 25px;
+  }
+
 }
