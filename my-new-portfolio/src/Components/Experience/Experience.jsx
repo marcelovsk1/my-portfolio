@@ -10,7 +10,7 @@ import CImage from "../../Assets/Skills/csharp.png";
 import railsImage from "../../Assets/Skills/rails.svg";
 import ruby from "../../Assets/Skills/ruby.png";
 import gitImage from "../../Assets/Skills/git_icon.png";
-import unityImage from "../../Assets/Skills/unity.svg";
+import unityImage from "../../Assets/Skills/unity_logo.png";
 import trenditImage from "../../Assets/Skills/trendit_img.png";
 
 const getImage = (imageSrc) => {
