@@ -6,17 +6,18 @@ import TrackVisibility from 'react-visibility-sensor';
 import './Projects.css';
 
 // iOS
-import netflixapp from "../../img/netflixapp.png"
-import weatherApp from "../../img/weatherapp.png"
-import newsapp from "../../img/newsapp.png"
-import guessgame from "../../img/guessgame.png"
-import mensagerapp from "../../img/mensagerapp.png"
-import socialmedia from "../../img/socialmedia.png"
+import netflixapp from "../../img/netflixapp.png";
+import weatherApp from "../../img/weatherapp.png";
+import newsapp from "../../img/newsapp.png";
+import guessgame from "../../img/guessgame.png";
+import mensagerapp from "../../img/mensagerapp.png";
+import socialmedia from "../../img/socialmedia.png";
 // Fullstack
 import gameofcodesImg from "../../img/game_of_codes.png";
 import adidasoriginals from "../../img/adidas.png";
-import scraper from "../../img/scraper.png"
-import portfolio from "../../img/portfolio.png"
+import scraper from "../../img/scraper.png";
+import portfolio from "../../img/myportfolio.png";
+import game_portfolio from "../../img/game_dev.png";
 // Games
 import boxrumble from "../../img/box.png"
 
@@ -83,9 +84,15 @@ const Projects = () => {
     },
     {
       title: "My Portfolio",
-      description: "My portfolio, constructed using React JS.",
+      description: "My portfolio, constructed using React.Js",
       imgUrl: portfolio,
       link: "https://github.com/marcelovsk1/my-new-portfolio"
+    },
+    {
+      title: "Game Dev Portfolio",
+      description: "My Game portfolio, built in React.Js",
+      imgUrl: game_portfolio,
+      link: "https://github.com/marcelovsk1/portfolio-games"
     }
   ];
 
