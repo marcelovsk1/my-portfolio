@@ -42,14 +42,26 @@
 }
 
 .skillImageContainer {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 20%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 20%; /* Alterando para 50% para obter um círculo perfeito */
   display: flex;
   align-items: center;
   justify-content: center;
   width: 120px;
   height: 120px;
+  overflow: hidden; /* Ocultando qualquer conteúdo que ultrapasse os limites do container */
 }
+
+/* Adicionando um efeito de transição suave */
+.skillImageContainer {
+  transition: box-shadow 0.6s ease;
+}
+
+/* Alterando a sombra ao passar o mouse para um efeito sutil */
+.skillImageContainer:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 
 .skillImageContainer img {
   width: 60px;
