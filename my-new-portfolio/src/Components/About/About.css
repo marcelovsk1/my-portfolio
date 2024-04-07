@@ -1,12 +1,24 @@
 .styles_container {
   position: relative;
-  padding-top: 15px;
-  background-color: rgb(255, 255, 255);
-  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Prefixo específico do Safari */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-  border-radius: 2%;
-  /* margin-top: 5vh; */
-  /* height: 100%; */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 0.5px solid #e0e0e0;
+}
+
+/* Adicionando sombra suave para destacar o container */
+.styles_container {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Adicionando um efeito de transição suave */
+.styles_container {
+  transition: box-shadow 0.3s ease;
+}
+
+/* Alterando a sombra ao passar o mouse para um efeito sutil */
+.styles_container:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .pic_container {

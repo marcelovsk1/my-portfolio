@@ -20,6 +20,7 @@ import portfolio from "../../img/myportfolio.png";
 import game_portfolio from "../../img/game_dev.png";
 // Games
 import boxrumble from "../../img/box.png"
+import world from "../../img/BEAUTIFUL_3D_WORLD1.png"
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("first");
@@ -72,7 +73,7 @@ const Projects = () => {
     },
     {
       title: "Game of Codes",
-      description: "A PvP game in Rails and JS, designed to introduce coding to beginners through a game quiz format",
+      description: "A PvP game in Rails and JS, to introduce coding to beginners",
       imgUrl: gameofcodesImg,
       link: "https://github.com/KittySou/game-of-codes"
     },
@@ -104,6 +105,12 @@ const Projects = () => {
       link: "https://github.com/marcelovsk1/BoxRumble"
     },
     {
+      title: "3D Open World",
+      description: "A beautiful 3D open world, made using Unity Engine",
+      imgUrl: world,
+      link: "https://github.com/marcelovsk1/BoxRumble"
+    },
+    {
       title: "Guess PvP Game",
       description: "A multiplayer guessing game where players compete to correctly identify doodles",
       imgUrl: guessgame,
@@ -111,7 +118,7 @@ const Projects = () => {
     },
     {
       title: "Game of Codes",
-      description: "A PvP game in Rails and JS, designed to introduce coding to beginners through a game quiz format",
+      description: "A PvP game in Rails and JS, to introduce coding to beginners",
       imgUrl: gameofcodesImg,
       link: "https://github.com/KittySou/game-of-codes"
     }

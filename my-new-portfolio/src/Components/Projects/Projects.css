@@ -1,10 +1,27 @@
 .project {
-  padding: 20px 0;
+  padding: 20px;
   position: relative;
   margin-top: 10vh;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 3%;
+  border-radius: 10px;
+  border: 0.5px solid #e0e0e0;
+  background-color: #ffffff;
 }
+
+/* Adicionando uma sombra suave para destacar o elemento */
+.project {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Adicionando um efeito de transição suave */
+.project {
+  transition: box-shadow 0.3s ease;
+}
+
+/* Alterando a sombra ao passar o mouse para um efeito sutil */
+.project:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.20);
+}
+
 .project h2 {
   font-size: 7vh;
   font-weight: 600;
