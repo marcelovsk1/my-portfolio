@@ -152,14 +152,14 @@ a.button.i-button:hover {
     justify-content: center;
   }
 
-  .project {
-    max-width: 500px;
-    height: 600px;
-    width: 150%;
-    margin-top: 60px;
-    justify-content: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 24px;
+.project {
+    max-width: 90%; /* Ajustando a largura máxima para garantir que o conteúdo não fique muito esticado */
+    height: auto; /* Removendo a altura fixa para que o elemento possa se ajustar ao conteúdo */
+    width: 150%; /* Definindo a largura como 100% para preencher a largura do contêiner pai */
+    margin-top: 30px; /* Reduzindo o espaçamento superior para melhor ajuste em telas menores */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adicionando uma sombra suave para destacar o elemento */
+    padding: 15px 80px; /* Ajustando o preenchimento interno para um visual mais equilibrado */
+    border-radius: 20px; /* Adicionando borda arredondada para suavizar as bordas */
   }
 
   .project h2 {
