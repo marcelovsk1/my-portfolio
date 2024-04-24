@@ -28,16 +28,16 @@ const Projects = () => {
 
   const iosProjects = [
     {
-      title: "3D Content in iOS",
-      description: "Integrate stunning 3D content into iOS & tvOS apps effortlessly with Spline.",
-      imgUrl: interfaceImg,
-      link: "https://github.com/marcelovsk1/3d_graphics/blob/master/3d_content/ContentView.swift"
-    },
-    {
       title: "Netflix Clone",
       description: "A clone of Netflix in Objective-C that had movie and TV shows",
       imgUrl: netflixapp,
       link: "https://github.com/marcelovsk1/netflix-app-clone"
+    },
+    {
+      title: "3D Content in iOS",
+      description: "Integrate stunning 3D content into iOS & tvOS apps effortlessly with Spline.",
+      imgUrl: interfaceImg,
+      link: "https://github.com/marcelovsk1/3d_graphics/blob/master/3d_content/ContentView.swift"
     },
     {
       title: "News App",
