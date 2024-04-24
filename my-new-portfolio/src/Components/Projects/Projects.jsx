@@ -12,6 +12,7 @@ import newsapp from "../../img/newsapp.png";
 import guessgame from "../../img/guessgame.png";
 import mensagerapp from "../../img/mensagerapp.png";
 import socialmedia from "../../img/socialmedia.png";
+import interfaceImg from "../../img/3d_interface.png";
 // Fullstack
 import gameofcodesImg from "../../img/game_of_codes.png";
 import adidasoriginals from "../../img/adidas.png";
@@ -26,6 +27,12 @@ const Projects = () => {
   const [activeTab, setActiveTab] = useState("first");
 
   const iosProjects = [
+    {
+      title: "3D Content in iOS",
+      description: "Integrate stunning 3D content into iOS & tvOS apps effortlessly with Spline.",
+      imgUrl: interfaceImg,
+      link: "https://github.com/marcelovsk1/3d_graphics/blob/master/3d_content/ContentView.swift"
+    },
     {
       title: "Netflix Clone",
       description: "A clone of Netflix in Objective-C that had movie and TV shows",
@@ -50,12 +57,12 @@ const Projects = () => {
       imgUrl: socialmedia,
       link: "https://github.com/marcelovsk1/SocialMediaClone"
     },
-    {
-      title: "Guess PvP Game",
-      description: "A multiplayer guessing game where players compete to correctly identify doodles",
-      imgUrl: guessgame,
-      link: "https://github.com/marcelovsk1/guess-multiplayer-game"
-    },
+    // {
+    //   title: "Guess PvP Game",
+    //   description: "A multiplayer guessing game where players compete to correctly identify doodles",
+    //   imgUrl: guessgame,
+    //   link: "https://github.com/marcelovsk1/guess-multiplayer-game"
+    // },
     {
       title: "Weather App",
       description: "Weather App in Swift, that fetches weather data from an API and presents it to users",
@@ -99,7 +106,7 @@ const Projects = () => {
 
   const gamesProjects = [
     {
-      title: "Box Rumble",
+      title: "Cube Rumble",
       description: "My first game project in Unity, just for fun",
       imgUrl: boxrumble,
       link: "https://github.com/marcelovsk1/BoxRumble"
