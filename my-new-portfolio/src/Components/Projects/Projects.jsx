@@ -57,12 +57,6 @@ const Projects = () => {
       imgUrl: socialmedia,
       link: "https://github.com/marcelovsk1/SocialMediaClone"
     },
-    // {
-    //   title: "Guess PvP Game",
-    //   description: "A multiplayer guessing game where players compete to correctly identify doodles",
-    //   imgUrl: guessgame,
-    //   link: "https://github.com/marcelovsk1/guess-multiplayer-game"
-    // },
     {
       title: "Weather App",
       description: "Weather App in Swift, that fetches weather data from an API and presents it to users",
