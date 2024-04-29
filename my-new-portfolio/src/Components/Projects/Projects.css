@@ -45,7 +45,7 @@
   grid-gap: 5px;
   margin: 2vh;
   max-height: 60vh;
-  overflow-y: auto; /* Adicionando uma barra de rolagem vertical quando necessário */
+  overflow-y: auto;
 }
 
 
@@ -114,8 +114,8 @@
   font-size: 1vh;
   letter-spacing: 1px;
   margin: 20px auto;
-  margin-left: 10px; /* Ajuste a margem esquerda conforme necessário */
-  margin-right: 10px; /* Ajuste a margem direita conforme necessário */
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .box-rumble-img {
