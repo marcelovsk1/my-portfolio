@@ -44,7 +44,10 @@
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 5px;
   margin: 2vh;
+  max-height: 60vh;
+  overflow-y: auto; /* Adicionando uma barra de rolagem vertical quando necessário */
 }
+
 
 .box img {
   width: 100%;
