@@ -30,7 +30,7 @@ const Projects = () => {
   const iosProjects = [
     {
       title: "Shoes App",
-      description: "A shoes app store",
+      description: "A Nike Clone shoes app store",
       imgUrl: airmaxone,
       link: "https://github.com/marcelovsk1/shoesApp"
     },
@@ -69,6 +69,12 @@ const Projects = () => {
       description: "Weather App in Swift, that fetches weather data from an API and presents it to users",
       imgUrl: weatherApp,
       link: "https://github.com/marcelovsk1/SwiftWeatherApp"
+    },
+    {
+      title: "Guess PvP Game",
+      description: "A multiplayer guessing game where players compete to correctly identify doodles",
+      imgUrl: guessgame,
+      link: "https://github.com/marcelovsk1/guess-multiplayer-game"
     }
   ];
 
