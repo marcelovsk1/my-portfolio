@@ -32,7 +32,7 @@ const Projects = () => {
       title: "Shoes App",
       description: "A shoes app store",
       imgUrl: airmaxone,
-      link: "https://github.com/marcelovsk1/netflix-app-clone"
+      link: "https://github.com/marcelovsk1/shoesApp"
     },
     {
       title: "Netflix Clone",
