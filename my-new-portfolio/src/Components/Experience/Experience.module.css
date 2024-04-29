@@ -106,7 +106,7 @@
 
 .historyItemDetails h3 {
   font-size: 25px;
-  width: 80%;
+  width: 60%;
   font-weight: 500;
   text-align: left;
 }
@@ -217,7 +217,7 @@
     font-size: 14px;
     font-weight: 700;
     text-align: left;
-    width: 150%;
+    width: 250%;
   }
 
   .historyItemDetails p {
