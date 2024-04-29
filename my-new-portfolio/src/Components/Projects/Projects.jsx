@@ -6,6 +6,7 @@ import TrackVisibility from 'react-visibility-sensor';
 import './Projects.css';
 
 // iOS
+import airmaxone from "../../img/airmaxone.png";
 import netflixapp from "../../img/netflixapp.png";
 import weatherApp from "../../img/weatherapp.png";
 import newsapp from "../../img/newsapp.png";
@@ -27,6 +28,12 @@ const Projects = () => {
   const [activeTab, setActiveTab] = useState("first");
 
   const iosProjects = [
+    {
+      title: "Shoes App",
+      description: "A shoes app store",
+      imgUrl: airmaxone,
+      link: "https://github.com/marcelovsk1/netflix-app-clone"
+    },
     {
       title: "Netflix Clone",
       description: "A clone of Netflix in Objective-C that had movie and TV shows",
