@@ -6,7 +6,7 @@ import TrackVisibility from 'react-visibility-sensor';
 import './Projects.css';
 
 // iOS
-import airmaxone from "../../img/airmaxone.png";
+import drakenike from "../../img/drakenike.png";
 import netflixapp from "../../img/netflixapp.png";
 import weatherApp from "../../img/weatherapp.png";
 import newsapp from "../../img/newsapp.png";
@@ -30,9 +30,9 @@ const Projects = () => {
   const iosProjects = [
     {
       title: "Shoes App",
-      description: "A Nike Clone shoes app store",
-      imgUrl: airmaxone,
-      link: "https://github.com/marcelovsk1/shoesApp"
+      description: "3D CGI applied to Swift iOS",
+      imgUrl: drakenike,
+      link: "https://github.com/marcelovsk1/Shoes-App"
     },
     {
       title: "Netflix Clone",
