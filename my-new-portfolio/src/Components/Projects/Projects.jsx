@@ -35,14 +35,8 @@ const Projects = () => {
       link: "https://github.com/marcelovsk1/Shoes-App"
     },
     {
-      title: "Netflix Clone",
-      description: "A clone of Netflix in Objective-C that had movie and TV shows",
-      imgUrl: netflixapp,
-      link: "https://github.com/marcelovsk1/netflix-app-clone"
-    },
-    {
       title: "3D Content in iOS",
-      description: "Integrate stunning 3D content into iOS & tvOS apps effortlessly with Spline.",
+      description: "Integrate stunning 3D content into iOS effortlessly with Spline.",
       imgUrl: interfaceImg,
       link: "https://github.com/marcelovsk1/3d_graphics/blob/master/3d_content/ContentView.swift"
     },
@@ -51,6 +45,12 @@ const Projects = () => {
       description: "Firebase and an API are being used in the development of a news application written in Swift.",
       imgUrl: newsapp,
       link: "https://github.com/marcelovsk1/NewsApp"
+    },
+    {
+      title: "Netflix Clone",
+      description: "A clone of Netflix in Objective-C that had movie and TV shows",
+      imgUrl: netflixapp,
+      link: "https://github.com/marcelovsk1/netflix-app-clone"
     },
     {
       title: "Mensager App",

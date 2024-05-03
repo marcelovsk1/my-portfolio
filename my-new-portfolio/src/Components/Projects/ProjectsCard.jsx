@@ -19,6 +19,12 @@ export const ProjectCard = ({ title, description, imgUrl, link}) => {
             {title === "3D Content in iOS" && (
               <a href="https://www.linkedin.com/feed/update/urn:li:activity:7188979149032570880/" className="button i-button">Live Demo</a>
             )}
+            {title === "News App" && (
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7188638289367621632/" className="button i-button">Live Demo</a>
+            )}
+            {title === "News App" && (
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7188638289367621632/" className="button i-button">Live Demo</a>
+            )}
           </div>
         </div>
       </div>
