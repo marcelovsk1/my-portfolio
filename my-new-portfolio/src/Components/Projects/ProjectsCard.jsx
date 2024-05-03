@@ -13,6 +13,9 @@ export const ProjectCard = ({ title, description, imgUrl, link}) => {
             {title === "Game of Codes" && (
               <a href="https://www.game-of-codes.pro/" className="button i-button">Live Demo</a>
             )}
+            {title === "Shoes App" && (
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7191889677941948416/" className="button i-button">Live Demo</a>
+            )}
           </div>
         </div>
       </div>

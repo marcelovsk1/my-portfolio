@@ -6,7 +6,7 @@ import TrackVisibility from 'react-visibility-sensor';
 import './Projects.css';
 
 // iOS
-import drakenike from "../../img/drakenike.png";
+import drakenike from "../../img/shoesapp.png";
 import netflixapp from "../../img/netflixapp.png";
 import weatherApp from "../../img/weatherapp.png";
 import newsapp from "../../img/newsapp.png";
