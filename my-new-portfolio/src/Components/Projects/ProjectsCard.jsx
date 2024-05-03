@@ -25,7 +25,7 @@ export const ProjectCard = ({ title, description, imgUrl, link}) => {
             {title === "3D Open World" && (
               <a href="https://www.linkedin.com/feed/update/urn:li:activity:7183925251368468481/" className="button i-button">Live Demo</a>
             )}
-            {title === "3D Open World" && (
+            {title === "Weather App" && (
               <a href="https://www.linkedin.com/feed/update/urn:li:activity:7120763456319799296/" className="button i-button">Live Demo</a>
             )}
           </div>
