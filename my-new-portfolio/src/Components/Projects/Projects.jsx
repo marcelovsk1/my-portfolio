@@ -13,7 +13,7 @@ import newsapp from "../../img/newsapp.png";
 import guessgame from "../../img/guessgame.png";
 import mensagerapp from "../../img/mensagerapp.png";
 import socialmedia from "../../img/socialmedia.png";
-import interfaceImg from "../../img/3d_interface.png";
+import interfaceImg from "../../img/ios3d.png";
 // Fullstack
 import gameofcodesImg from "../../img/game_of_codes.png";
 import adidasoriginals from "../../img/adidas.png";
