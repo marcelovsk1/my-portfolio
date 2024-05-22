@@ -14,6 +14,7 @@ import guessgame from "../../img/guessgame.png";
 import mensagerapp from "../../img/mensagerapp.png";
 import socialmedia from "../../img/socialmedia.png";
 import interfaceImg from "../../img/ios3d.png";
+import ai_project from "../../img/ai_project.png"
 // Fullstack
 import gameofcodesImg from "../../img/game_of_codes.png";
 import adidasoriginals from "../../img/adidas.png";
@@ -28,6 +29,12 @@ const Projects = () => {
   const [activeTab, setActiveTab] = useState("first");
 
   const iosProjects = [
+    {
+      title: "AI ImageGenerator",
+      description: "AI/GPT integrate on SwiftUi",
+      imgUrl: ai_project,
+      link: "https://github.com/marcelovsk1/AI_ImageGenerator"
+    },
     {
       title: "Shoes App",
       description: "3D CGI applied to Swift iOS",
