@@ -16,6 +16,10 @@
     "imageSrc": "Skills/js.png"
   },
   {
+    "title": "Typescript",
+    "imageSrc": "Skills/typescript_logo.svg.png"
+  },
+  {
     "title": "C#",
     "imageSrc": "Skills/csharp.png"
   },
