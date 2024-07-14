@@ -28,15 +28,11 @@
     "imageSrc": "Skills/rails.svg"
   },
   {
-    "title": "Ruby",
-    "imageSrc": "Skills/ruby.png"
+    "title": "OpenAi",
+    "imageSrc": "Skills/openai.png"
   },
   {
     "title": "Git",
     "imageSrc": "Skills/git_icon.png"
-  },
-  {
-    "title": "Unity",
-    "imageSrc": "Skills/unity.svg"
   }
 ]
