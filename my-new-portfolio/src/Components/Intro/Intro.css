@@ -1,267 +1,216 @@
+/* .intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+  margin: 0;
+  overflow: hidden;
+}
+
+.animated-rectangle-container {
+  position: relative;
+  width: 90%; 
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animated-rectangle {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://everwallpaper.com/cdn/shop/files/wheat-field-wallpaper-mural-plain.jpg?v=1722224502');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  animation: revealRectangle 1.5s ease-out forwards;
+}
+
+.rectangle-frame {
+  position: absolute;
+  width: calc(100% + 20px); 
+  height: calc(100% + 20px);
+  border: 10px solid #d4af37; 
+  z-index: 2;
+  opacity: 0;
+  animation: revealFrame 2s ease-out forwards;
+  animation-delay: 1.5s; 
+}
+
+.rectangle-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  z-index: 1;
+  animation: fadeIn 1.5s ease-in forwards;
+  animation-delay: 1s;
+}
+
+.rectangle-text {
+  position: absolute;
+  z-index: 3;
+  color: #ffffff;
+  font-size: 7rem;
+  font-weight: 700;
+  font-family: 'Merriweather', serif; 
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: fadeInText 1.5s ease-out forwards;
+  animation-delay: 2.5s; 
+}
+
+@keyframes revealRectangle {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes revealFrame {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+} */
+
+
+/* ball */
+
 .intro {
   display: flex;
-  height: 750px;
-  margin: 0 auto;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+  margin: 0;
+  overflow: hidden;
 }
 
-.role-container {
-  height: 50px;
-  margin-right: 30px;
-}
-
-.intro .i-left {
+.animated-ball-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.animated-ball {
+  width: 55%;
+  height: 80%;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-image: url('https://everwallpaper.com/cdn/shop/files/wheat-field-wallpaper-mural-plain.jpg?v=1722224502');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
-  flex: 1;
-  flex-direction: column;
-  gap: 25px;
-  margin-top: 250px;
-  margin-left: 200px;
+  overflow: hidden;
+  animation: scaleIn 1.5s ease-out forwards; 
+  opacity: 0; 
 }
 
-.i-name {
-  display: flex;
-  flex-direction: column;
+.ball-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  opacity: 0; 
+  animation: fadeIn 2s ease-in forwards;
+  animation-delay: 1s; 
+  z-index: 1;
+}
+
+.ball-text {
+  position: absolute;
+  z-index: 2;
+  color: #ffffff; 
+  font-size: 3.5rem; 
+  font-weight: 700; 
+  font-family: 'Playfair Display', serif; 
   text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-text-stroke: 0.1px #0e0e0e; 
+  text-stroke: 0.5px #fc4949; 
+  text-fill-color: #131212; 
+  opacity: 0;
+  animation: fadeInText 1.5s ease-out forwards; 
+  animation-delay: 3s; 
 }
 
-.i-name > :nth-child(1) {
-  color: rgb(101, 101, 101);
-  font-weight: regular;
-  font-size: 34px;
-}
-
-.i-name > :nth-child(2) {
-  color: var(--black);
-  font-weight: 600;
-  font-size: 54px;
-  letter-spacing: -1px;
-}
-
-.i-name > :nth-child(3) {
-  font-size: 34px;
-  margin-top: 5px;
-  background-image: linear-gradient(to right, #FF3B30, #FFCC00, #42b6ce, #007AFF, #9763e4);
-  background-clip: text;
-  color: transparent;
-  font-weight: 600;
-  -webkit-text-fill-color: transparent;
-}
-
-.role {
-  font-weight: 600;
-}
-
-.i-buttons-container {
-  display: flex;
-  justify-content: center;
-}
-
-.button.i-button,
-.button-cv,
-.button-contact {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 4px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.button-cv {
-  margin-right: 24px;
-  display: flex;
-  align-items: center;
-  transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease;
-}
-
-.button-cv:hover,
-.button-contact:hover {
-  transform: scale(1.10);
-}
-
-.button-contact {
-  background-color: #e3e3e3;
-  color: #007bff;
-  border: none;
-  padding: 14px 16px;
-  font-size: 14px;
-  font-weight: 600;
-  margin-right: 24px;
-  border-radius: 4px;
-  cursor: pointer;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease;
-}
-
-.i-icons {
-  margin-top: 5px;
-  display: flex;
-  justify-content: center;
-  margin-right: 15px;
-  cursor: pointer;
-  align-items: center;
-}
-
-.i-icons > * {
-  width: 30px;
-  height: 30px;
-}
-
-.intro .i-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  height: 500px;
-  margin-top: 130px;
-  margin-left: 20px;
-}
-
-.i-right img {
-  width: 500px;
-  height: auto;
-  margin-right: 200px;
-}
-
-@media screen and (min-width: 2000px) and (max-width: 2500px) {
-  .intro .i-right img {
-    width: 500px;
-    height: auto;
-    margin-right: 600px;
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
   }
-
-  .intro .i-left {
-    display: flex;
-    position: relative;
-    flex: 1;
-    flex-direction: column;
-    gap: 25px;
-    margin-top: 250px;
-    margin-left: 400px;
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
-@media screen and (max-width: 600px) {
 
-  .intro {
-    display: flex;
-    flex-direction: column;
-    margin-top: -80px;
-    margin-bottom: -20px;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-
-  .intro .i-left {
-    order: 2;
-    display: flex;
-    position: relative;
-    flex: 1;
-    flex-direction: column;
-    gap: 2rem;
-    margin-top: -540px;
-    padding-bottom: 30px;
-    margin-left: 0; /* Adicionei essa linha */
-  }
-
-  .intro .i-right {
-    order: 1;
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    height: 100%;
-    padding-bottom: 30px;
-    padding-left: 10px;
-  }
-
-  .i-name > :nth-child(1) {
-    font-size: 16px;
-    margin-top: 5px;
-  }
-
-  .i-name > :nth-child(2) {
-    font-size: 28px;
-    width: 100%;
-  }
-
-  .i-name > :nth-child(3) {
-    font-size: 26px;
-    width: 100%;
-  }
-
-  .role {
-    font-size: 26px;
-    font-weight: 600;
-    width: 100%;
-    height: 100px;
-    margin-top: -400px;
-  }
-
-  .i-buttons-container {
-    display: flex;
-    justify-content: center;
-  }
-
-  .button-cv {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 2px 12px;
-    font-size: 14px;
-    font-weight: 600;
-    margin-left: 24px;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .button-contact {
-    background-color: #efefef;
-    color: #007bff;
-    border: none;
-    padding: 2px 18px;
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .i-icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; /* Centraliza os ícones horizontalmente */
-    margin-right: 20px;
-    margin-left: 11px;
-    /* gap: 5px;  */
-  }
-
-  .i-icons > * {
-    width: 30px;
-    height: 30px;
-    margin-right: 0.5px; /* Valor negativo para reduzir o espaçamento */
-  }
-
-  .i-name {
-    margin-top: -10vh;
-  }
-
-  .intro .i-right img {
-    height: 150px;
-    padding-left: 180px;
-    padding-bottom: 600px;
+  100% {
+    opacity: 1;
   }
 }
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}  
+
+

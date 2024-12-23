@@ -1,263 +1,80 @@
-.styles_container {
-  position: relative;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  border: 0.5px solid #e0e0e0;
-}
-
-/* Adicionando sombra suave para destacar o container */
-.styles_container {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Adicionando um efeito de transição suave */
-.styles_container {
-  transition: box-shadow 0.3s ease;
-}
-
-/* Alterando a sombra ao passar o mouse para um efeito sutil */
-.styles_container:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.pic_container {
-  display: -webkit-box; /* Prefixo específico do Safari */
-  display: -ms-flexbox; /* Prefixo específico do Internet Explorer */
+/* Estilo principal para o container */
+.about-container {
   display: flex;
-  -webkit-box-align: center; /* Prefixo específico do Safari */
-      -ms-flex-align: center; /* Prefixo específico do Internet Explorer */
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; /* Garante espaçamento consistente */
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  padding: 40px;
+  border-radius: 20px;
+  /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.7); */
+  gap: 50px; 
+  max-width: 1200px;
+  margin: auto;
 }
 
-.About-Pic {
-  height: 30%;
-  width: 30%;
-  margin-left: 60px;
+.about-left, .about-right {
+  flex: 1;
 }
 
-.styles_title {
-  font-size: 70px;
+/* Estilo para o título */
+.about-title {
+  font-size: 60px;
+  text-align: justify;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.about-title span {
+  color: #3498db;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Texto descritivo */
+.about-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #4a4a4a;
+  text-align: justify;
+}
+
+.about-text span {
   font-weight: 600;
-  letter-spacing: -2px;
+  color: black;
 }
 
-.styles_title span {
-  color: var(--blueCard);
-  font-weight: 600;
-}
-
-.styles_content {
-  display: -webkit-box; /* Prefixo específico do Safari */
-  display: -ms-flexbox; /* Prefixo específico do Internet Explorer */
-  display: flex;
-  -webkit-box-orient: horizontal; /* Prefixo específico do Safari */
-  -webkit-box-direction: normal; /* Prefixo específico do Safari */
-      -ms-flex-direction: row; /* Prefixo específico do Internet Explorer */
-          flex-direction: row;
-  -webkit-box-align: center; /* Prefixo específico do Safari */
-      -ms-flex-align: center; /* Prefixo específico do Internet Explorer */
-          align-items: center;
-  padding-bottom: 100px;
-}
-
-.styles_itens {
-  display: -webkit-box; /* Prefixo específico do Safari */
-  display: -ms-flexbox; /* Prefixo específico do Internet Explorer */
-  display: flex;
-  -webkit-box-orient: vertical; /* Prefixo específico do Safari */
-  -webkit-box-direction: normal; /* Prefixo específico do Safari */
-      -ms-flex-direction: column; /* Prefixo específico do Internet Explorer */
-          flex-direction: column;
-  gap: 50px;
-  -webkit-box-flex: 1; /* Prefixo específico do Safari */
-      -ms-flex-positive: 1; /* Prefixo específico do Internet Explorer */
-          flex-grow: 1;
-}
-
-.education {
-  display: -webkit-box; /* Prefixo específico do Safari */
-  display: -ms-flexbox; /* Prefixo específico do Internet Explorer */
-  display: flex;
-  list-style: none;
-  -webkit-box-align: center; /* Prefixo específico do Safari */
-      -ms-flex-align: center; /* Prefixo específico do Internet Explorer */
-          align-items: center;
-  margin-bottom: -10px;
-}
-
-.webdev {
-  display: -webkit-box; /* Prefixo específico do Safari */
-  display: -ms-flexbox; /* Prefixo específico do Internet Explorer */
-  display: flex;
-  -webkit-box-orient: vertical; /* Prefixo específico do Safari */
-  -webkit-box-direction: normal; /* Prefixo específico do Safari */
-      -ms-flex-direction: column; /* Prefixo específico do Internet Explorer */
-          flex-direction: column;
-}
-
-.description {
-  -webkit-box-align: center; /* Prefixo específico do Safari */
-      -ms-flex-align: center; /* Prefixo específico do Internet Explorer */
-          align-items: center;
-  word-wrap: break-word;
-  padding-left: 24px;
-  text-align: start;
-  margin-bottom: 2px;
-}
-
-.le_wagon, .iOS {
+/* Foto no lado direito */
+.about-photo {
   max-width: 100%;
-}
-
-h3 {
-  font-weight: 600;
-  font-size: 24px;
-}
-
-p {
-  padding-right: 50px;
-  max-width: 700px;
-  text-align: left;
-  font-size: 16px;
-}
-
-.le_wagon {
-  max-width: 100%;
-  border-radius: 10%;
-  width: 50%;
-  height: 50%;
-  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Prefixo específico do Safari */
-          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  margin-right: 100px;
-}
-
-.iOS {
-  border-radius: 10%;
-  width: 55%;
-  height: 55%;
-  margin-right: 10px;
-  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
-}
-
-.le_wagon:hover {
-  -webkit-transform: scale(1.1); /* Prefixo específico do Safari */
-          transform: scale(1.1);
-  -webkit-transition: -webkit-transform 0.3s ease; /* Prefixo específico do Safari */
-  transition: transform 0.3s ease;
-}
-
-.iOS:hover {
-  -webkit-transform: scale(1.1); /* Prefixo específico do Safari */
-          transform: scale(1.1);
-  -webkit-transition: -webkit-transform 0.3s ease; /* Prefixo específico do Safari */
-  transition: transform 0.3s ease;
+  max-height: 700px; 
+  height: auto; 
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
-@media screen and (max-width: 600px) {
-
-  .container-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: -70px;
-    margin-bottom: -30px;
-  }
-
-  .styles_container {
-    /* max-width: 1000px; */
-    height: 600px;
-    width: 1200px;
-    /* margin-top: 4vh; */
-    /* justify-content: center; */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    padding: 0px 44px;
-    border-radius: 20px;
+/* Animação ao passar o mouse */
+.about-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-  .styles_title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 35px;
-    margin-bottom: -3vh;
-  }
-
-  .About-Pic {
-    display: none;
-  }
-
-  .description {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    /* text-align: center; */
-    margin-right: 11px;
-    margin-bottom: -2vh;
-
-  }
-
-  .description h3 {
-    display: flex;
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .about-container {
     flex-direction: column;
     text-align: center;
-    margin-right: 45px;
-    width: 100%;
-    font-size: 20px;
-    margin-bottom: 0vh;
+    gap: 30px;
+    padding: 30px;
   }
 
-  .description p {
-    text-align: center;
-    margin-bottom: 5px;
-    width: 165%;
-    /* margin-left: 2px; */
-    /* margin-bottom: 50px; */
+  .about-photo {
+    max-width: 80%;
+    margin: 20px auto;
+    border-radius: 50%;
   }
-
-  p > span {
-    font-weight: 600;
-    color: var(--blueCard);
-  }
-
-  .ios-span {
-    font-weight: 600;
-    color: var(--blueCard);
-  }
-
-  .le_wagon {
-    display: none;
-    margin-left: 2vh;
-  }
-
-  .iOS {
-    display: none;
-    margin-left: 100px;
-  }
-
-}
-
-
-@media screen and (min-width: 2000px) and (max-width: 2500px) {
-  /* Seu CSS para larguras de tela entre 1200px e 2500px */
-  .styles_content {
-    /* align-items: center; */
-    /* display: flex; */
-    /* flex-direction: row; */
-    padding-bottom: 10vh;
-    margin-left: 20vh;
-  }
-
-  .iOS {
-    margin-right: 500px;
-    width: 250px;
-    height: auto;
-  }
-
-  .About-Pic {
-    width: 500px;
-    height: auto;
-    margin-left: 25px;
-  }
-
 }
