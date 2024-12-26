@@ -1,10 +1,22 @@
 [
   {
+    "role": "Frontend Developer",
+    "organisation": "Evry Jewels",
+    "startDate": "Aug, 2024",
+    "endDate": "Present",
+    "experiences": [
+      "As a Frontend Developer, I build and enhance the company's internal tools using Next.js and React. I also optimize the e-commerce platform with Shopify Liquid, ensuring a responsive and user-friendly experience aligned with the brand's goals."
+    ],
+    "imageSrc": "Skills/ej.png"
+  },
+  {
     "role": "Software Engineer Intern",
     "organisation": "Trendit - Top Events Live Ranking",
     "startDate": "Dec, 2023",
-    "endDate": "Present",
-    "experiences": ["As a Software Engineer Intern at Trendit - Find Events, I develop and enhance the app's functionality and user experience by implementing updates. I also create scraper robots to gather event data from diverse sources and update the app's database. This includes writing efficient code to handle large volumes of data with accuracy and reliability."],
+    "endDate": "Jul, 2024",
+    "experiences": [
+      "As a Software Engineer Intern, I improved app functionality, created scraper robots to gather event data, and managed the app's database to handle large volumes of data efficiently."
+    ],
     "imageSrc": "Skills/trendit_img.png"
   }
 ]

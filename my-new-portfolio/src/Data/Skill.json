@@ -8,8 +8,8 @@
     "imageSrc": "Skills/react.png"
   },
   {
-    "title": "Python",
-    "imageSrc": "Skills/python.png"
+    "title": "Shopify Liquid",
+    "imageSrc": "Skills/liquid.png"
   },
   {
     "title": "JS",
@@ -20,16 +20,16 @@
     "imageSrc": "Skills/typescript_logo.svg.png"
   },
   {
+    "title": "Python",
+    "imageSrc": "Skills/python.png"
+  },
+  {
     "title": "C#",
     "imageSrc": "Skills/csharp.png"
   },
   {
     "title": "Rails",
     "imageSrc": "Skills/rails.svg"
-  },
-  {
-    "title": "OpenAi",
-    "imageSrc": "Skills/openai.png"
   },
   {
     "title": "Git",

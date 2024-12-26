@@ -12,8 +12,10 @@ import ruby from "../../Assets/Skills/ruby.png";
 import gitImage from "../../Assets/Skills/git_icon.png";
 import unityImage from "../../Assets/Skills/unity_logo.png";
 import trenditImage from "../../Assets/Skills/trendit_img.png";
-import typescript from "../../Assets/Skills/typescript_logo.svg.png"
-import openai from "../../Assets/Skills/openai.png"
+import typescript from "../../Assets/Skills/typescript_logo.svg.png";
+import openai from "../../Assets/Skills/openai.png";
+import evryImage from "../../Assets/Skills/ej.png";
+import liquid from "../../Assets/Skills/liquid.png";
 
 const getImage = (imageSrc) => {
   switch (imageSrc) {
@@ -27,12 +29,12 @@ const getImage = (imageSrc) => {
       return pythonImage;
     case "Skills/csharp.png":
       return CImage;
-      case "Skills/typescript_logo.svg.png":
-        return typescript
+    case "Skills/typescript_logo.svg.png":
+      return typescript;
     case "Skills/rails.svg":
       return railsImage;
     case "Skills/ruby.png":
-      return ruby
+      return ruby;
     case "Skills/git_icon.png":
       return gitImage;
     case "Skills/unity.svg":
@@ -41,6 +43,10 @@ const getImage = (imageSrc) => {
       return trenditImage;
     case "Skills/openai.png":
       return openai;
+      case "Skills/ej.png":
+        return evryImage;
+      case "Skills/liquid.png":
+        return liquid;
     default:
       return null;
   }
@@ -50,40 +56,45 @@ const Experience = () => {
   return (
     <section className={styles.container} id="experience">
       <h2 className={styles.title}>
-        My <span>Experience</span>
+        My Experience
       </h2>
-      <div className={styles.content}>
+      <div className={styles.gridContainer}>
+        {/* Skills Section */}
         <div className={styles.skills}>
-          {/* Renderização dos botões de imagem */}
           {skills.map((skill, skillId) => (
-            <div key={skillId} className={styles.skill}>
-              <div className={styles.skillImageContainer}>
+            <div key={skillId} className={styles.card}>
+              <div className={styles.cardImage}>
                 <img src={getImage(skill.imageSrc)} alt={skill.title} />
               </div>
-              <p>{skill.title}</p>
+              <p className={styles.cardTitle}>{skill.title}</p>
             </div>
           ))}
         </div>
-        <ul className={styles.history}>
-          {/* Renderização do histórico */}
+        {/* History Section */}
+        <div className={styles.history}>
           {historyData.map((historyItem, historyId) => (
-            <li key={historyId} className={styles.historyItem}>
-              <div className={styles.historyItemDetails}>
+            <div key={historyId} className={styles.historyCard}>
+              <div className={styles.historyCardHeader}>
                 <img
                   src={getImage(historyItem.imageSrc)}
                   alt={`${historyItem.organisation} Logo`}
                 />
-                <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
-                <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
-                <ul>
-                  {historyItem.experiences.map((experience, id) => (
-                    <li key={id}>{experience}</li>
-                  ))}
-                </ul>
+                <div>
+                  <h3>{historyItem.role}</h3>
+                  <p>{historyItem.organisation}</p>
+                  <span>
+                    {historyItem.startDate} - {historyItem.endDate}
+                  </span>
+                </div>
               </div>
-            </li>
+              <ul>
+                {historyItem.experiences.map((experience, id) => (
+                  <li key={id}>{experience}</li>
+                ))}
+              </ul>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );
