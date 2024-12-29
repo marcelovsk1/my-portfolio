@@ -14,7 +14,7 @@ import unityImage from "../../Assets/Skills/unity_logo.png";
 import trenditImage from "../../Assets/Skills/trendit_img.png";
 import typescript from "../../Assets/Skills/typescript_logo.svg.png";
 import openai from "../../Assets/Skills/openai.png";
-import evryImage from "../../Assets/Skills/ej.png";
+import evryImage from "../../Assets/Skills/evryj.png";
 import liquid from "../../Assets/Skills/liquid.png";
 
 const getImage = (imageSrc) => {
@@ -43,7 +43,7 @@ const getImage = (imageSrc) => {
       return trenditImage;
     case "Skills/openai.png":
       return openai;
-      case "Skills/ej.png":
+      case "Skills/evryj.png":
         return evryImage;
       case "Skills/liquid.png":
         return liquid;
