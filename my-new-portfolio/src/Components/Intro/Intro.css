@@ -134,9 +134,9 @@
 }
 
 .animated-ball {
-  width: 55%;
-  height: 80%;
-  border-radius: 50%;
+  width: 55vw; /* Define largura com base na largura da viewport */
+  height: 55vw; /* Define altura igual à largura para manter a esfera */
+  border-radius: 50%; /* Garante que seja perfeitamente redonda */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   background-image: url('https://everwallpaper.com/cdn/shop/files/wheat-field-wallpaper-mural-plain.jpg?v=1722224502');
   background-size: cover;
@@ -213,4 +213,29 @@
   }
 }  
 
+@media (max-width: 768px) {
+  .animated-ball {
+    width: 90vw; 
+    height: 90vw; 
+    border-radius: 50%; 
+  }
 
+  .ball-text {
+    position: absolute;
+    z-index: 2;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-text-stroke: 0.1px #0e0e0e;
+    text-stroke: 0.5px #fc4949;
+    text-fill-color: #131212;
+    opacity: 0;
+    animation: fadeInText 1.5s ease-out forwards;
+    animation-delay: 3s;
+  }
+}

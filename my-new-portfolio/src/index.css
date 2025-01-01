@@ -18,6 +18,13 @@
     color: var(--black);
 }
 
+@media screen and (max-width: 768px){
+    .App{
+        padding: .05rem .05rem;
+    }
+  
+}
+
 .button {
   border-radius: 0.3rem;
   border: none;
